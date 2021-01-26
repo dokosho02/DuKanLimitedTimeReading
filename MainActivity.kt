@@ -18,12 +18,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var textView: TextView
     lateinit var button: Button
 
-    val tokenv2 = "8cee58eb967055a399f14ccdd532b576504877c9968690fb6c53caf932fbca74abf4bbc8f24c48594e6abc1dbd330aded1ef659687136057bd292d581c3733ff5eed33d8566886630d383f6a8e8f"
-    val notionPage = "https://www.notion.so/MiReader-4b0aca1e3798486fb87b63d6cd6058e3"
-
-//    val wiki = "https://en.wikipedia.org"
-//    var websiteLink = "$wiki/wiki/List_of_films_with_a_100%25_rating_on_Rotten_Tomatoes"
-
     var limitedTimeSite = "https://www.duokan.com/special/18956"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -71,21 +65,3 @@ class MainActivity : AppCompatActivity() {
         override fun onPostExecute(aVoid: Void?) {
             super.onPostExecute(aVoid)
             textView.text = words
-
-
-//            val notion = Notion.fromToken(
-//                    token = tokenv2
-//            )
-        }
-    }
-}
-
-//import androidx.appcompat.app.AppCompatActivity
-//import android.os.Bundle
-//
-//class MainActivity : AppCompatActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//    }
-//}
